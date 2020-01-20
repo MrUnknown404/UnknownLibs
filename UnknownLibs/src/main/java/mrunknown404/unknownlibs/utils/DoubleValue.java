@@ -7,7 +7,6 @@ package mrunknown404.unknownlibs.utils;
  * @param <R>
  */
 public class DoubleValue<L, R> {
-	
 	private L left;
 	private R right;
 	

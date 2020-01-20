@@ -1,5 +1,9 @@
 package mrunknown404.unknownlibs.utils;
 
+import net.minecraft.entity.Entity;
+import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.util.math.Vec3d;
+
 /**A bunch of math utilities
  * @author -Unknown-
  */
@@ -48,5 +52,11 @@ public class MathUtils {
 		}
 		
 		return (number - min) / (max - min);
+	}
+	
+	public static RayTraceResult rayTrace(Entity entity, double distance, float partialTicks, boolean ignoresLiquid) {
+		Vec3d look = entity.getLook(partialTicks);
+		Vec3d end = entity.getPositionEyes(partialTicks).addVector(look.x * distance, look.y * distance, look.z * distance);
+		return entity.world.rayTraceBlocks(entity.getPositionEyes(partialTicks), end, !ignoresLiquid, false, true);
 	}
 }
