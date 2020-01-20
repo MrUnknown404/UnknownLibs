@@ -1,0 +1,16 @@
+[
+{
+  "modid": "unknownlibs",
+  "name": "UnknownLibs",
+  "description": "A collection of commonly used classes",
+  "version": "1.0.0",
+  "mcversion": "[1.12.2]",
+  "url": "https://github.com/MrUnknown404/UnknownLibs",
+  "updateUrl": "",
+  "authorList": ["-Unknown-"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
