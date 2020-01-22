@@ -10,12 +10,12 @@ import net.minecraft.util.math.Vec3d;
 public class MathUtils {
 	public static int floor(float value) {
 		int i = (int) value;
-		return value < (float) i ? i - 1 : i;
+		return value < i ? i - 1 : i;
 	}
 	
 	public static int ceil(float value) {
 		int i = (int) value;
-		return value > (float) i ? i + 1 : i;
+		return value > i ? i + 1 : i;
 	}
 	
 	public static float clamp(float num, float min, float max) {

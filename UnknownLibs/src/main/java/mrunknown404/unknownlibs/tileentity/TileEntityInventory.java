@@ -24,7 +24,7 @@ public abstract class TileEntityInventory extends TileEntity implements IInvento
 	
 	@Override
 	public ITextComponent getDisplayName() {
-		return (ITextComponent) (hasCustomName() ? new TextComponentString(getName()) : new TextComponentTranslation(getName()));
+		return hasCustomName() ? new TextComponentString(getName()) : new TextComponentTranslation(getName());
 	}
 	
 	@Override
