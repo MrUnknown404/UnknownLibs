@@ -6,6 +6,10 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.nbt.NBTTagString;
 import net.minecraftforge.common.util.Constants;
 
+/**
+ * @since 1.0.0
+ * @author -Unknown-
+ */
 public class NBTUtils {
 	public static ItemStack addLore(ItemStack item, String... lore) {
 		NBTTagCompound tag = item.getTagCompound();

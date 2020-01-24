@@ -6,6 +6,10 @@ import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.util.ResourceLocation;
 
+/**
+ * @since 1.0.0
+ * @author -Unknown-
+ */
 public class RenderBase<T extends EntityLiving> extends RenderLiving<T> {
 	
 	private final ModelBase model;

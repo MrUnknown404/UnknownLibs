@@ -2,7 +2,11 @@ package mrunknown404.unknownlibs.utils;
 
 import net.minecraft.item.Item;
 
-public interface CommonProxy {
+/**
+ * @since 1.0.2
+ * @author -Unknown-
+ */
+public interface ICommonProxy {
 	void preInit();
 	void init();
 	void postInit();

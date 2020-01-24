@@ -2,6 +2,10 @@ package mrunknown404.unknownlibs.entity;
 
 import net.minecraft.entity.EntityLiving;
 
+/**
+ * @since 1.0.0
+ * @author -Unknown-
+ */
 public class EntityInfo {
 	public final String name;
 	public final Class<? extends EntityLiving> clazz;

@@ -4,6 +4,10 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
+/**
+ * @since 1.0.0
+ * @author -Unknown-
+ */
 public class CreativeTab extends CreativeTabs {
 	
 	protected final Item item;

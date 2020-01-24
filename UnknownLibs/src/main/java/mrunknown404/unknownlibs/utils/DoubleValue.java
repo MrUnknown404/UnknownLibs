@@ -1,8 +1,9 @@
 package mrunknown404.unknownlibs.utils;
 
 /**A class that holds 2 unique values
+ * @since 1.0.0
  * @author -Unknown-
- *
+ * 
  * @param <L>
  * @param <R>
  */

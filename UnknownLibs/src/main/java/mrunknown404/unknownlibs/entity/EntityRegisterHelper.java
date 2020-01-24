@@ -6,6 +6,10 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 
+/**
+ * @since 1.0.0
+ * @author -Unknown-
+ */
 public class EntityRegisterHelper {
 	public static void registerEntities(List<EntityInfo> entities, Object mod, String modid) {
 		for (EntityInfo info : entities) {

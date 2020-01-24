@@ -14,6 +14,10 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
 
+/**
+ * @since 1.0.0
+ * @author -Unknown-
+ */
 public abstract class TileEntityInventory extends TileEntity implements IInventory {
 	protected NonNullList<ItemStack> inv;
 	protected String customName;

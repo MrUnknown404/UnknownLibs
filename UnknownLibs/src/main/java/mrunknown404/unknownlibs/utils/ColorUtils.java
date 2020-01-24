@@ -3,6 +3,7 @@ package mrunknown404.unknownlibs.utils;
 import org.lwjgl.util.Color;
 
 /**A bunch of random color utilities
+ * @since 1.0.0
  * @author -Unknown-
  */
 public class ColorUtils {

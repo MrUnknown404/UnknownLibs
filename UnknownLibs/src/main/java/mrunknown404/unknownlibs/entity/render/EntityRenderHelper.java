@@ -6,6 +6,10 @@ import net.minecraft.entity.EntityLiving;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
+/**
+ * @since 1.0.0
+ * @author -Unknown-
+ */
 public class EntityRenderHelper {
 	public static void registerRender(Class<? extends EntityLiving> entityClazz, RenderBase<? super EntityLiving> render) {
 		RenderingRegistry.registerEntityRenderingHandler(entityClazz, new EntityRenderFactory(render));

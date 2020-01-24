@@ -5,6 +5,7 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
 
 /**A bunch of math utilities
+ * @since 1.0.0
  * @author -Unknown-
  */
 public class MathUtils {

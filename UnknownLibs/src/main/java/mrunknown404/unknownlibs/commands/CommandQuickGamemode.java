@@ -10,6 +10,10 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.GameType;
 
+/**
+ * @since 1.0.0
+ * @author -Unknown-
+ */
 public class CommandQuickGamemode extends CommandBase {
 	private final GameType gameType;
 	
