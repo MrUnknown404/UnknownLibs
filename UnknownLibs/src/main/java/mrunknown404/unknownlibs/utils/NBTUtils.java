@@ -11,6 +11,7 @@ import net.minecraftforge.common.util.Constants;
  * @author -Unknown-
  */
 public class NBTUtils {
+	/** @since 1.0.0 */
 	public static ItemStack addLore(ItemStack item, String... lore) {
 		NBTTagCompound tag = item.getTagCompound();
 		if (tag == null) {

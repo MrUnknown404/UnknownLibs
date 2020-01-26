@@ -7,7 +7,8 @@ import org.lwjgl.util.Color;
  * @author -Unknown-
  */
 public class ColorUtils {
-	/**Adds color/formatting to the given string {@link ColorCodes}, {@link FormatCodes}
+	/**@since 1.0.0
+	 * Adds color/formatting to the given string {@link ColorCodes}, {@link FormatCodes}
 	 * @param str String to modify
 	 * @return The given string with color/formatting
 	 */
@@ -22,19 +23,22 @@ public class ColorUtils {
 		return new String(b);
 	}
 	
-	/**@return A string containing all color/formatting codes
+	/**@since 1.0.0
+	 * @return A string containing all color/formatting codes
 	 */
 	public static String getAllCodes() {
 		return ColorCodes.getAllColorCodes() + FormatCodes.getAllFormatCodes();
 	}
 	
-	/**@return A string containing all rainbow color codes in order
+	/**@since 1.0.0
+	 * @return A string containing all rainbow color codes in order
 	 */
 	public static String getRainbowCodes() {
 		return "4c6e2ab319d5";
 	}
 	
-	/**Checks if the given string is a valid hex color
+	/**@since 1.0.0
+	 * Checks if the given string is a valid hex color
 	 * @param hexColor String to check for valid hex color
 	 * @return true if the given string is valid hex color, otherwise false
 	 */
@@ -60,7 +64,8 @@ public class ColorUtils {
 		return true;
 	}
 	
-	/**Checks & converts the given hex color to a {@link Color}
+	/**@since 1.0.0
+	 * Checks & converts the given hex color to a {@link Color}
 	 * @param colorStr
 	 * @return If the provided hex color is valid, returns the given string converted into {@link Color}, otherwise returns black
 	 */
@@ -89,7 +94,8 @@ public class ColorUtils {
 	 * GRAY        ("7")
 	 * DARK_GRAY   ("8")
 	 * BLACK       ("9")
-	 * </pre> */
+	 * </pre>
+	 * @since 1.0.0 */
 	public enum ColorCodes {
 		/** Color Code : 4 */ DARK_RED    ("4"),
 		/** Color Code : c */ RED         ("c"),
@@ -114,7 +120,8 @@ public class ColorUtils {
 			this.code = code;
 		}
 		
-		/**@return A string containing all color codes
+		/**@since 1.0.0
+		 * @return A string containing all color codes
 		 */
 		public static String getAllColorCodes() {
 			StringBuilder sb = new StringBuilder();
@@ -126,6 +133,8 @@ public class ColorUtils {
 		}
 	}
 	
+	
+	
 	/**<pre> String code <br>
 	 * BOLD         ("l")
 	 * STRIKETHROUGH("m")
@@ -133,7 +142,8 @@ public class ColorUtils {
 	 * ITALIC       ("o")
 	 * OBFUSCATED   ("k")
 	 * RESET        ("r")
-	 * </pre> */
+	 * </pre>
+	 * @since 1.0.0 */
 	public enum FormatCodes {
 		/** Color Code : l */ BOLD         ("l"),
 		/** Color Code : m */ STRIKETHROUGH("m"),
@@ -148,7 +158,8 @@ public class ColorUtils {
 			this.code = code;
 		}
 		
-		/**@return A string containing all formatting codes
+		/**@since 1.0.0
+		 * @return A string containing all formatting codes
 		 */
 		public static String getAllFormatCodes() {
 			StringBuilder sb = new StringBuilder();

@@ -17,6 +17,7 @@ public class DummyRecipe extends IForgeRegistryEntry.Impl<IRecipe> implements IR
 		this.output = output;
 	}
 	
+	/** @since 1.0.0 */
 	public static IRecipe from(IRecipe other) {
 		return new DummyRecipe(other.getRecipeOutput()).setRegistryName(other.getRegistryName());
 	}
