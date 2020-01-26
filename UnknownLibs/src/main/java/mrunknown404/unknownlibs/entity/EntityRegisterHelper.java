@@ -11,12 +11,14 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
  * @author -Unknown-
  */
 public class EntityRegisterHelper {
+	/** @since 1.0.0 */
 	public static void registerEntities(List<EntityInfo> entities, Object mod, String modid) {
 		for (EntityInfo info : entities) {
 			registerEntity(mod, modid, info.name, info.clazz, info.id, info.range, info.color1, info.color2);
 		}
 	}
 	
+	/** @since 1.0.0 */
 	private static void registerEntity(Object mod, String modid, String name, Class<? extends Entity> clazz, int id, int range, int color1, int color2) {
 		EntityRegistry.registerModEntity(new ResourceLocation(modid, name), clazz, name, id, mod, range, 1, true, color1, color2);
 	}

@@ -11,10 +11,12 @@ import net.minecraftforge.fml.client.registry.RenderingRegistry;
  * @author -Unknown-
  */
 public class EntityRenderHelper {
+	/** @since 1.0.0 */
 	public static void registerRender(Class<? extends EntityLiving> entityClazz, RenderBase<? super EntityLiving> render) {
 		RenderingRegistry.registerEntityRenderingHandler(entityClazz, new EntityRenderFactory(render));
 	}
 	
+	/** @since 1.0.0 */
 	private static class EntityRenderFactory implements IRenderFactory<EntityLiving> {
 		private final RenderBase<? super EntityLiving> render;
 		

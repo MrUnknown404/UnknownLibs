@@ -23,6 +23,7 @@ public class RenderBase<T extends EntityLiving> extends RenderLiving<T> {
 		this.resourceLoc = resourceLoc;
 	}
 	
+	/** @since 1.0.0 */
 	public RenderBase<T> createNew(RenderManager manager) {
 		return new RenderBase<T>(manager, model, resourceLoc, shadow);
 	}
