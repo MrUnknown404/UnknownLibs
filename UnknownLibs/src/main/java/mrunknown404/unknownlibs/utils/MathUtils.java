@@ -212,4 +212,9 @@ public class MathUtils {
 		
 		return null;
 	}
+	
+	/** @since 1.0.3 */
+	public static boolean within(float value, float min, float max) {
+		return value >= min && value <= max;
+	}
 }
