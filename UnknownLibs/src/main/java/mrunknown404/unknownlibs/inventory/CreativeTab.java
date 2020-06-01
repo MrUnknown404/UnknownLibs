@@ -5,17 +5,17 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 /**
- * @since 1.0.0
+ * @since 1.0.4
  * @author -Unknown-
  */
 public class CreativeTab extends CreativeTabs {
-	
-	protected final Item item;
+	protected final String itemID;
 	protected final boolean hasSearchBar;
+	private Item item;
 	
-	public CreativeTab(String label, Item item, boolean hasSearchBar) {
+	public CreativeTab(String label, String itemID, boolean hasSearchBar) {
 		super(label);
-		this.item = item;
+		this.itemID = itemID;
 		this.hasSearchBar = hasSearchBar;
 		
 		if (hasSearchBar) {
@@ -25,6 +25,12 @@ public class CreativeTab extends CreativeTabs {
 	
 	@Override
 	public ItemStack getTabIconItem() {
+		if (item == null) {
+			if ((item = Item.getByNameOrId(itemID)) == null) {
+				return ItemStack.EMPTY;
+			}
+		}
+		
 		return new ItemStack(item);
 	}
 	
