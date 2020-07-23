@@ -11,5 +11,6 @@ public interface ICommonProxy {
 	void init();
 	void postInit();
 	
-	default void registerItemRenderer(Item item, int meta, String id) {}
+	@SuppressWarnings("unused")
+	default void registerItemRenderer( Item item, int meta, String id) {}
 }
