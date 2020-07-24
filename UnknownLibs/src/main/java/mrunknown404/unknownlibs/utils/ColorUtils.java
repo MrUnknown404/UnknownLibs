@@ -77,6 +77,18 @@ public class ColorUtils {
 		return new Color(Integer.valueOf(colorStr.substring(1, 3), 16), Integer.valueOf(colorStr.substring(3, 5), 16), Integer.valueOf(colorStr.substring(5, 7), 16));
 	}
 	
+	/**@since 1.0.5
+	 * Converts the given RGBA integers to a single integer (Used for GUIs)
+	 * @param r The red value (0-255)
+	 * @param g The green value (0-255)
+	 * @param b The blue value (0-255)
+	 * @param a The alpha value (0-255)
+	 * @return
+	 */
+	public static int rgbaToInt(int r, int g, int b, int a) {
+		return (a << 24) + (r << 16) + (g << 8) + (b);
+	}
+	
 	/**<pre> String code <br>
 	 * DARK_RED    ("4")
 	 * RED         ("c")
