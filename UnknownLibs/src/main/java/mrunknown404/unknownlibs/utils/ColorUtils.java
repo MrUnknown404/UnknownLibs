@@ -145,8 +145,6 @@ public class ColorUtils {
 		}
 	}
 	
-	
-	
 	/**<pre> String code <br>
 	 * BOLD         ("l")
 	 * STRIKETHROUGH("m")
