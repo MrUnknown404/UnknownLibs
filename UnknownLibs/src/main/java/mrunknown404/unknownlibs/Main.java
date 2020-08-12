@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
+@SuppressWarnings("javadoc")
 @Mod(modid = Main.MOD_ID, useMetadata = true, acceptableRemoteVersions = "*")
 public class Main {
 	public static final String MOD_ID = "unknownlibs";

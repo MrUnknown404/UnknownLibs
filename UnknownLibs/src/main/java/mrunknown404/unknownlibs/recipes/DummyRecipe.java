@@ -13,6 +13,9 @@ import net.minecraftforge.registries.IForgeRegistryEntry;
 public class DummyRecipe extends IForgeRegistryEntry.Impl<IRecipe> implements IRecipe {
 	private final ItemStack output;
 	
+	/** Creates a dummy recipe that can be used to replace a vanilla recipe
+	 * @param output ItemStack to replace
+	 */
 	public DummyRecipe(ItemStack output) {
 		this.output = output;
 	}

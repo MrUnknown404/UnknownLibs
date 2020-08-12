@@ -9,6 +9,12 @@ import net.minecraft.item.ItemStack;
  * @author -Unknown-
  */
 public class SlotOutput extends Slot {
+	/**
+	 * @param inv Slot's {@link IInventory}
+	 * @param index Slot ID
+	 * @param x X coordinate of the slot
+	 * @param y Y coordinate of the slot
+	 */
 	public SlotOutput(IInventory inv, int index, int x, int y) {
 		super(inv, index, x, y);
 	}

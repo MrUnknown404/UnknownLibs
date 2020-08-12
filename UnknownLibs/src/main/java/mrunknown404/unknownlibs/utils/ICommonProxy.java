@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
  * @since 1.0.2
  * @author -Unknown-
  */
+@SuppressWarnings("javadoc")
 public interface ICommonProxy {
 	void preInit();
 	void init();

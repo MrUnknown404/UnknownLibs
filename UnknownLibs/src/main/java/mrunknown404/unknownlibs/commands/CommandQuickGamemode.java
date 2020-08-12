@@ -17,6 +17,7 @@ import net.minecraft.world.GameType;
 public class CommandQuickGamemode extends CommandBase {
 	private final GameType gameType;
 	
+	/** Used internally */
 	public CommandQuickGamemode(GameType gameType) {
 		this.gameType = gameType;
 	}

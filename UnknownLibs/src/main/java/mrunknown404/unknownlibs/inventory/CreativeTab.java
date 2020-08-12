@@ -13,6 +13,11 @@ public class CreativeTab extends CreativeTabs {
 	protected final boolean hasSearchBar;
 	private Item item;
 	
+	/**
+	 * @param label Name for display
+	 * @param itemID Item ID for the label
+	 * @param hasSearchBar Whether or not it has a search bar
+	 */
 	public CreativeTab(String label, String itemID, boolean hasSearchBar) {
 		super(label);
 		this.itemID = itemID;

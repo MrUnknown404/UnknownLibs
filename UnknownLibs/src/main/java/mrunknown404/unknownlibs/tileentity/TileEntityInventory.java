@@ -22,6 +22,7 @@ public abstract class TileEntityInventory extends TileEntity implements IInvento
 	protected NonNullList<ItemStack> inv;
 	protected String customName;
 	
+	/** @param size The inventory size */
 	public TileEntityInventory(int size) {
 		this.inv = NonNullList.<ItemStack>withSize(size, ItemStack.EMPTY);
 	}
