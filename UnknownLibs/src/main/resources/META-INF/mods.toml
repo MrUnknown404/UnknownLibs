@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[33,)"
+license="GNU General Public License v3.0"
+issueTrackerURL="https://github.com/MrUnknown404/UnknownLibs/issues"
+[[mods]]
+modId="unknownlibs"
+version="1.0.0"
+displayName="UnknownLibs"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/unknownlibs"
+logoFile=""
+credits="Adds some shared code for most of my mods"
+authors="-Unknown-"
+description='''
+Adds some shared code for most of my mods
+'''
+
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.unknownlibs]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[33,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.unknownlibs]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.2]"
+    ordering="NONE"
+    side="BOTH"

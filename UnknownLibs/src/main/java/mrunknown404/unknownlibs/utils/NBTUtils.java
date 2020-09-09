@@ -1,10 +1,9 @@
 package mrunknown404.unknownlibs.utils;
 
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
-import net.minecraft.nbt.NBTTagString;
-import net.minecraftforge.common.util.Constants;
+import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.nbt.ListNBT;
+import net.minecraft.nbt.StringNBT;
 
 /**
  * @since 1.0.0
@@ -13,22 +12,22 @@ import net.minecraftforge.common.util.Constants;
 public class NBTUtils {
 	/** @since 1.0.0 */
 	public static ItemStack addLore(ItemStack item, String... lore) {
-		NBTTagCompound tag = item.getTagCompound();
+		CompoundNBT tag = item.getTag();
 		if (tag == null) {
-			tag = new NBTTagCompound();
+			tag = new CompoundNBT();
 		}
 		
-		if (!tag.hasKey("display", Constants.NBT.TAG_COMPOUND)) {
-			tag.setTag("display", new NBTTagCompound());
+		if (!tag.hasUniqueId("display")) {
+			tag.put("display", new CompoundNBT());
 		}
 		
-		NBTTagList l = new NBTTagList();
+		ListNBT l = new ListNBT();
 		for (String s : lore) {
-			l.appendTag(new NBTTagString(s));
+			l.add(StringNBT.valueOf(s));
 		}
 		
-		tag.getCompoundTag("display").setTag("Lore", l);
-		item.setTagCompound(tag);
+		tag.getCompound("display").put("Lore", l);
+		item.setTag(tag);
 		return item;
 	}
 }

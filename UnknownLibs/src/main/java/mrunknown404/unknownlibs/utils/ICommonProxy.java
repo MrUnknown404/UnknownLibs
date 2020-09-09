@@ -3,10 +3,9 @@ package mrunknown404.unknownlibs.utils;
 import net.minecraft.item.Item;
 
 /**
- * @since 1.0.2
+ * @since 1.0.0
  * @author -Unknown-
  */
-@SuppressWarnings("javadoc")
 public interface ICommonProxy {
 	void preInit();
 	void init();

@@ -1,7 +1,6 @@
 package mrunknown404.unknownlibs.utils;
 
-import org.lwjgl.util.Color;
-import org.lwjgl.util.ReadableColor;
+import java.awt.Color;
 
 /**A bunch of random color utilities
  * @since 1.0.0
@@ -72,13 +71,13 @@ public class ColorUtils {
 	 */
 	public static Color hex2Color(String colorStr) {
 		if (!isValidHexColor(colorStr)) {
-			return new Color();
+			return new Color(0, 0, 0);
 		}
 		
 		return new Color(Integer.valueOf(colorStr.substring(1, 3), 16), Integer.valueOf(colorStr.substring(3, 5), 16), Integer.valueOf(colorStr.substring(5, 7), 16));
 	}
 	
-	/**@since 1.1.1
+	/**@since 1.0.0
 	 * Converts the given RGBA integers to a single integer (Used for GUIs)
 	 * @param r The red value (0-255)
 	 * @param g The green value (0-255)
@@ -90,27 +89,27 @@ public class ColorUtils {
 		return (a << 24) + (r << 16) + (g << 8) + (b);
 	}
 	
-	/**@since 1.1.1
+	/**@since 1.0.0
 	 * Converts the given RGBA integers to a single integer (Used for GUIs)
 	 * @param color Color to convert
 	 * @return an int value based off the given colors (This is mostly used for Guis)
 	 */
-	public static int rgba2Int(ReadableColor color) {
+	public static int rgba2Int(Color color) {
 		return (color.getAlpha() << 24) + (color.getRed() << 16) + (color.getGreen() << 8) + (color.getBlue());
 	}
 	
-	/** @since 1.1.2 */ public static final int  RED = rgba2Int(Color.RED);
-	/** @since 1.1.2 */ public static final int  ORANGE = rgba2Int(Color.ORANGE);
-	/** @since 1.1.2 */ public static final int  YELLOW = rgba2Int(Color.YELLOW);
-	/** @since 1.1.2 */ public static final int  GREEN = rgba2Int(Color.GREEN);
-	/** @since 1.1.2 */ public static final int  CYAN = rgba2Int(Color.CYAN);
-	/** @since 1.1.2 */ public static final int  BLUE = rgba2Int(Color.BLUE);
-	/** @since 1.1.2 */ public static final int  PURPLE = rgba2Int(Color.PURPLE);
-	/** @since 1.1.1 */ public static final int  WHITE = rgba2Int(Color.WHITE);
-	/** @since 1.1.2 */ public static final int  BLACK = rgba2Int(Color.BLACK);
-	/** @since 1.1.2 */ public static final int  LIGHT_GREY = rgba2Int(Color.LTGREY);
-	/** @since 1.1.2 */ public static final int  DARK_GREY = rgba2Int(Color.DKGREY);
-	/** @since 1.1.2 */ public static final int  GREY = rgba2Int(Color.GREY);
+	/** @since 1.0.0 */ public static final int  RED = rgba2Int(Color.RED);
+	/** @since 1.0.0 */ public static final int  ORANGE = rgba2Int(Color.ORANGE);
+	/** @since 1.0.0 */ public static final int  YELLOW = rgba2Int(Color.YELLOW);
+	/** @since 1.0.0 */ public static final int  GREEN = rgba2Int(Color.GREEN);
+	/** @since 1.0.0 */ public static final int  CYAN = rgba2Int(Color.CYAN);
+	/** @since 1.0.0 */ public static final int  BLUE = rgba2Int(Color.BLUE);
+	/** @since 1.0.0 */ public static final int  PURPLE = rgba2Int(Color.MAGENTA);
+	/** @since 1.0.0 */ public static final int  WHITE = rgba2Int(Color.WHITE);
+	/** @since 1.0.0 */ public static final int  BLACK = rgba2Int(Color.BLACK);
+	/** @since 1.0.0 */ public static final int  LIGHT_GRAY = rgba2Int(Color.LIGHT_GRAY);
+	/** @since 1.0.0 */ public static final int  DARK_GRAY = rgba2Int(Color.DARK_GRAY);
+	/** @since 1.0.0 */ public static final int  GRAY = rgba2Int(Color.GRAY);
 	
 	/**<pre> String code <br>
 	 * DARK_RED    ("4")
@@ -188,7 +187,6 @@ public class ColorUtils {
 		/** Color Code : k */ OBFUSCATED   ("k"),
 		/** Color Code : r */ RESET        ("r");
 		
-		@SuppressWarnings("javadoc")
 		public final String code;
 		
 		private FormatCodes(String code) {
