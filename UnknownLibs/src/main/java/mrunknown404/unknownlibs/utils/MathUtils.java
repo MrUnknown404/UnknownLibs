@@ -130,7 +130,6 @@ public class MathUtils {
 				int j1 = MathHelper.floor(vec31.z);
 				BlockPos blockpos = new BlockPos(l, i1, j1);
 				BlockState iblockstate = w.getBlockState(blockpos);
-				Block block = iblockstate.getBlock();
 				
 				if ((iblockstate.getCollisionShape(w, blockpos) != VoxelShapes.empty()) && !blocksToIgnore.contains(iblockstate.getBlock())) { //&& block.canCollideCheck(iblockstate, false)) {
 					RayTraceResult raytraceresult = iblockstate.getCollisionShape(w, blockpos).rayTrace(vec31, vec32, blockpos);
@@ -232,7 +231,6 @@ public class MathUtils {
 					j1 = MathHelper.floor(vec31.z) - (enumfacing == Direction.SOUTH ? 1 : 0);
 					blockpos = new BlockPos(l, i1, j1);
 					BlockState iblockstate1 = w.getBlockState(blockpos);
-					Block block1 = iblockstate1.getBlock();
 					
 					if (iblockstate1.getMaterial() == Material.PORTAL || iblockstate1.getCollisionShape(w, blockpos) != VoxelShapes.empty()) {
 						if (!blocksToIgnore.contains(iblockstate1.getBlock())) { // && block1.canCollideCheck(iblockstate1, false)) {
