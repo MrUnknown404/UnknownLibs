@@ -13,7 +13,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = mod_version
-archivesBaseName = 'UnknownLibs'
+archivesBaseName = 'UnknownLibs' + mc_version
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
